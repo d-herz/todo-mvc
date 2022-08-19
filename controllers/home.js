@@ -3,3 +3,5 @@ module.exports = {
         res.render('index.ejs')
     }
 }
+
+//exports an object, with a method called getIndex

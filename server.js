@@ -10,7 +10,7 @@ connectDB()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true })) //line 13 & 14 replace body Parser and allow stuff to be yoinked from the body of requests
 app.use(express.json())
 
 app.use('/', homeRoutes)

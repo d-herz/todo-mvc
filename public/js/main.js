@@ -33,7 +33,7 @@ async function deleteTodo(){
 }
 
 async function markComplete(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.dataset.id  //dataset is used to access the data attribute from the parent node (the li), and .id is the attribute we need (could be named anything, .rainbow, .zerba, etc)
     try{
         const response = await fetch('todos/markComplete', {
             method: 'put',
